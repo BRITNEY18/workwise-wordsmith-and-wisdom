@@ -8,8 +8,8 @@ const DISCLAIMER_RULES =
   "Never invent facts, statistics or sources. If information is uncertain, say so. Do not give legal, medical or financial advice as definitive.";
 
 export type AiTask =
-  | { task: "email"; instruction: string; tone: "Formal" | "Friendly" | "Persuasive"; recipient?: string }
-  | { task: "research"; content: string; focus?: string }
+  | { task: "email"; instruction: string; tone: "Formal" | "Friendly" | "Persuasive"; recipient?: string | undefined }
+  | { task: "research"; content: string; focus?: string | undefined }
   | { task: "chat"; messages: { role: "user" | "assistant"; content: string }[] };
 
 function build(body: AiTask): { instructions: string; messages: ModelMessage[] } {
@@ -70,7 +70,7 @@ Use earlier messages in the conversation as context. Be concise and practical; u
 }
 
 export async function handleAi(request: Request): Promise<Response> {
-  const apiKey = process.env.LOVABLE_API_KEY;
+  const apiKey = process.env["LOVABLE_API_KEY"];
   if (!apiKey) return Response.json({ error: "AI is not configured: LOVABLE_API_KEY is missing." }, { status: 500 });
 
   let body: AiTask;

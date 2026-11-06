@@ -1,6 +1,6 @@
 export type AiPayload =
-  | { task: "email"; instruction: string; tone: string; recipient?: string }
-  | { task: "research"; content: string; focus?: string }
+  | { task: "email"; instruction: string; tone: string; recipient?: string | undefined }
+  | { task: "research"; content: string; focus?: string | undefined }
   | { task: "chat"; messages: { role: "user" | "assistant"; content: string }[] };
 
 /** Streams AI text from the app's AI endpoint. Throws with a readable message on failure. */
