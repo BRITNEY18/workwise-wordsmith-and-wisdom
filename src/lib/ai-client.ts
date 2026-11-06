@@ -13,7 +13,7 @@ export async function streamAi(
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify(payload),
-    signal,
+    signal: signal ?? null,
   });
   if (!res.ok || !res.body) {
     let msg = `Request failed (${res.status})`;
