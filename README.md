@@ -1,50 +1,154 @@
 # Workwise Wordsmith And Wisdom
+### AI Workplace Productivity Assistant
 
-Build a modern, responsive SaaS web application called **AI Workplace Productivity Assistant**.
+## 1. Project Overview
 
-**Design:** Create a clean, professional dashboard with a light blue, white and soft-grey colour scheme. Include a collapsible sidebar, modern cards, rounded corners, simple icons and responsive desktop/mobile layouts.
+Workwise Wordsmith And Wisdom is a modern, responsive AI-powered workplace productivity application designed to help professionals complete everyday workplace tasks more efficiently.
 
-**Features:**
+The application provides three main AI tools: a Smart Email Generator, an AI Research Assistant and an AI Workplace Chatbot. These tools help users generate professional emails, summarise information, identify key findings, generate insights and receive assistance with workplace-related questions.
 
-1. **Smart Email Generator:** Generate professional emails from user instructions, with Formal, Friendly and Persuasive tone options. Allow users to edit and copy generated emails.
+The application features a clean, professional and user-friendly dashboard with a light blue, white and soft-grey colour scheme. It is designed to work across desktop and mobile devices.
 
-2. **AI Research Assistant:** Summarise user-provided topics or articles and generate meaningful insights, key findings and recommendations.
+The project was developed using [Lovable](https://lovable.dev/).
 
-3. **AI Workplace Chatbot:** Provide an interactive chat interface that answers workplace questions and assists with tasks using context-aware AI responses.
+## 2. Features Implemented
 
-**Requirements:**
+### 2.1 Smart Email Generator
+- Generates professional emails based on user-provided instructions.
+- Provides three writing tone options:
+  - Formal
+  - Friendly
+  - Persuasive
+- Allows users to edit generated emails.
+- Includes a copy function for easy use.
 
-- Use structured AI prompts for accurate, relevant and genuinely AI-generated responses.
+### 2.2 AI Research Assistant
+- Summarises user-provided topics or articles.
+- Identifies important information and key findings.
+- Generates meaningful insights.
+- Provides recommendations based on research topics.
+- Allows users to review and edit AI-generated content.
 
-- AI outputs must be editable, not generic predefined templates or hardcoded responses.
+### 2.3 AI Workplace Chatbot
+- Provides an interactive chat interface.
+- Answers workplace-related questions.
+- Assists users with everyday workplace tasks.
+- Provides context-aware AI responses.
+- Supports ongoing conversations.
 
-- Include loading indicators, error handling and copy buttons.
+### 2.4 User Interface and Design
+- Modern and responsive dashboard.
+- Light blue, white and soft-grey colour scheme.
+- Collapsible navigation sidebar.
+- Modern cards with rounded corners.
+- Simple icons and easy navigation.
+- Responsive desktop and mobile layouts.
+- Loading indicators and error handling.
+- Copy buttons for generated content.
+- Responsible AI disclaimer.
 
-- Add a responsible AI disclaimer.
+## 3. Technologies and Tools Used
 
-- Use reusable components and simple navigation.
+| Technology / Tool | Purpose |
+|---|---|
+| Lovable | AI-assisted application development |
+| React | Frontend user interface |
+| JavaScript / TypeScript | Application functionality |
+| Tailwind CSS | Styling and responsive design |
+| Node.js | JavaScript development environment |
+| npm | Package management |
+| GitHub | Source code management and version control |
+| AI API / Provider | AI-powered content generation and responses |
 
-**Technical constraints:** Build a frontend-only application with no custom backend, database or authentication. Use a client-side AI integration where supported. Never substitute hardcoded sample responses for real AI generation. If an AI provider or API key is required, clearly indicate the setup needed rather than pretending AI functionality works.
+*Note: The technologies listed should be checked against the actual project dependencies. Live AI functionality may require an external AI provider and API key.*
 
-Keep the application lightweight, functional and visually polished. Prioritise the three core AI features over unnecessary extras.
+## 4. Installation and Setup Instructions
 
-This project was built with [Lovable](https://lovable.dev).
+Follow the instructions below to download and run the application locally.
 
-## Build with Lovable
+### Prerequisites
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/226c4462-e44f-4305-aa04-dacff7ec2c35).
+Make sure you have installed the following:
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- [Node.js](https://nodejs.org/)
+- npm (included with Node.js)
+- [Git](https://git-scm.com/)
+- A code editor such as Visual Studio Code.
 
-## Development
+### Step 1: Clone the Repository
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Open your terminal and run:
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
+git clone https://github.com/BRITNEY18/workwise-wordsmith-and-wisdom.git
+```
+
+### Step 2: Navigate to the Project Folder
+
+```bash
+cd workwise-wordsmith-and-wisdom
+```
+
+### Step 3: Install Dependencies
+
+Install the required project dependencies:
+
+```bash
+npm install
+```
+
+### Step 4: Configure AI Integration
+
+If an external AI provider is required, configure the necessary API key and environment variables according to the provider's documentation and the project's setup requirements.
+
+**Important:** Never upload API keys, passwords or other sensitive credentials to GitHub.
+
+### Step 5: Run the Application
+
+Start the local development server:
+
+```bash
 npm run dev
 ```
+
+### Step 6: Open the Application
+
+Once the development server starts, open the local URL displayed in your terminal. The default Vite development address is usually:
+
+```text
+http://localhost:5173
+```
+
+## 5. Responsible AI Usage
+
+Workwise Wordsmith And Wisdom uses artificial intelligence to support workplace productivity and assist users with everyday tasks.
+
+Users should review and verify AI-generated information before using, sharing or making decisions based on it. AI-generated content may occasionally contain inaccurate or incomplete information.
+
+The application is intended to support human decision-making and should not replace professional judgement.
+
+## 6. Project Development
+
+This application was developed using [Lovable](https://lovable.dev/), an AI-powered platform for building web applications.
+
+The project is maintained on GitHub, allowing the source code to be managed, updated and improved.
+
+**Lovable Project:**
+
+https://workwise-wordsmith-and-wisdom.lovable.app/
+
+**GitHub Repository:**
+
+https://github.com/BRITNEY18/workwise-wordsmith-and-wisdom
+
+## 7. Author
+
+**GitHub Username:** BRITNEY18
+
+**Project Name:** Workwise Wordsmith And Wisdom
+
+**Application:** AI Workplace Productivity Assistant
+
+---
+
+*Developed as an AI-powered workplace productivity application using Lovable and GitHub.*
